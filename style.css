@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+body{
+    background-color: blue;
+    color: black;
+}
+.topo{
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}    
+.menu{
+    margin-top: 10px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.conteudo{
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+
+}
+.card{
+    text-align: center;
+    padding: 16px;
+    border-top: 1px solid white;
+    margin-top: 40px;
+
+}
+
+    
+
+    
+
+.conteudo{
+    grid-template-columns: 1fr;
+}
