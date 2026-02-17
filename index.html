@@ -9,13 +9,35 @@
 <body>
     <header class="topo">
     <h1>Jovens Que Vencem</h1>
+    <h1>de</h1>
     <h1>Belford Roxo</h1>
     <main class="menu">
-    <a href="inicio.html" class="inicio">Inicio</a>
+    <a href="inicio.html" class="inicio">Início</a>
     <a href="sobre.html"  class="sobre">Sobre</a>
     <a href="contato.html" class="contato">Contato</a>
-    <a href="jogo.html">JOGAR!</a>
+    <a href="jogo.html" class="jogue">
+    <span class="texto">Jogar!</span>
+    <img src="img/—Pngtree—game control glyph icon vector_5209075.png" alt="Jogar" class="img-hover"></a>
     </main>
+
+    <audio id="musica" loop hidden>
+  <source src="audio/fundo.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const musica = document.getElementById("musica");
+  musica.volume = 0.25;
+
+  function iniciarMusica() {
+    musica.play().catch(() => {});
+    document.removeEventListener("click", iniciarMusica);
+    document.removeEventListener("touchstart", iniciarMusica);
+  }
+
+  document.addEventListener("click", iniciarMusica);
+  document.addEventListener("touchstart", iniciarMusica);
+</script>
+
     </header>
      
 
