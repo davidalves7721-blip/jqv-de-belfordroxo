@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    touch-action: manipulation;
+}
+#game {
+    position: relative;
+    width: 800px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#game.day {
+    background: linear-gradient(#87CEEB,#E0F6FF);
+}
+#game.night {
+    background: linear-gradient(#0B132B,#1C2541);
+}
+#player {
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    width: 70px;
+    height: 70px;
+    background: url() no-repeat center;
+    background-size: contain;
+}
+#obstacle {
+    position: absolute;
+    bottom: 0;
+    right: -80px;
+    width: 60px;
+    height: 60px;
+    background: url() no-repeat center;
+    background-size: contain;
+}
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: white;
+}
+#startText {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 120px;
+    color: white;
+    font-size: 18px;
+}
