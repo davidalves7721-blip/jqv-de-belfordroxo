@@ -58,7 +58,7 @@ body{
 }  
 .section-descr {
     margin-top: 10px;
-    display: inline-block;
+    display: grid;
     gap: 16px;
     justify-content: center;
     flex-wrap: wrap;
